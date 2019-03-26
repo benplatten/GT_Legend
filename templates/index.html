@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>GT_Legend</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   </head>
+   <body>
+      
+         <div class="container">
+            <div class="row" style="background-color: #542c90;">
+               <div class="col-xs-12 mx-auto p-3 mb-2" style="background-color: #542c90; color: white; font-family: Arial;">
+                  <h4><strong>REPRISE SITESPEED TRACKER AND DATABASE</strong></h4>
+                  <p class="lead"></p>
+               </div>
+            </div>
+            <div class="row form-group" style="padding-top: 20px;" id="new_url">
+               <form method="post"  action="{{ url_for('add_url') }}">
+               
+                  <label>
+                     <h5>Add a URL</h5>
+                  </label>
+                  <div class="form-group"  >
+                     <div >
+                        <input type="text" id="client" name="test_client" class="mb-4" placeholder="Client" style="width: 80%;">
+                     </div>
+                     <div >
+                        <input type="text" id="url"  name="test_url" class="mb-4" placeholder="URL to test" style="width: 80%;">
+                     </div>
+                     <div class="form-check form-check-inline col-md-3">
+                        <input class="form-check-input" type="radio" id="desktop" name="device_type" value="desktop">
+                        <label class="form-check-label" for="inlineRadio1">Desktop</label>
+                     </div>
+                     <div class="form-check form-check-inline col-md-3">
+                        <input class="form-check-input" type="radio"  id="mobile" name="device_type" value="mobile">
+                        <label class="form-check-label" for="inlineRadio2">Mobile</label>
+                     </div>
+                     <div class="form-check form-check-inline col-md-2 mb-1">
+                        <input class="form-check-input" type="radio"  id="desktop_and_mobile"  name="device_type" value="desktop_and_mobile">
+                        <label class="form-check-label" for="inlineRadio3">Both</label>
+                     </div>
+                     <div class="col-md-4">
+                        <button type="submit" class="btn btn-success mt-4" id="submit_button" style="width: 100%;">Submit</button>
+                     </div>
+                  </div>
+             
+            </form>
+       
+               <div class="col-md-6">
+                  <label>
+                     <h5>View Client list</h5>
+                  </label>
+                
+                  <div>
+                     
+                     <div class="col-md-4">
+                          <form action="{{ url_for('view_clients') }}" method="post">
+                        <button type="submit" class="btn btn-primary mt-4 mb-4" id="view_clients" style="width: 100%;"></button>
+                        </form>
+                     </div>
+                  </div>
+                  
+               
+                  <label>
+                     <h5>View URL list</h5>
+                  </label>
+                  <div >
+                     
+                     <div class="col-md-4">
+                        <form action="{{ url_for('view_urls') }}" method="post">
+                        <button type="submit" class="btn btn-primary mt-4" id="view_urls" style="width: 100%;"></button>
+                     
+                           
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+        
+
+
+
+
+         </div>     <!-- main containter-->
+   
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script ></script>
+   </body>
+
+</html>
+

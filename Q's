@@ -1,0 +1,23 @@
+Q's 
+routes 
+resources
+models
+peewee
+simpler work flow
+user input into json file
+
+.create()
+.select()
+.save()
+.get()
+.delete_instance()
+https://peewee.readthedocs.io/en/latest/peewee/querying.html
+
+
+__pseudo__
+flask
+- routes
+- resources?
+database
+- peewee
+server

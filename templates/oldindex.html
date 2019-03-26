@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+{% block content%}
+<h1>GT_Legend</h1>
+<h3>Sitespeed tracker + database</h3>
+
+<form method="post"  action="{{ url_for('add_url') }}">
+Add URL: <input type="text" id="test_url" name="test_url">
+<input type="submit">
+<br>
+</form>
+<br>
+<form method="post"  action="{{ url_for('del_url') }}">
+Delete URL: <input type="text" id="del_url" name="del_url">
+<input type="submit">
+<br>
+</form>
+<br>
+
+
+<form action="{{ url_for('view_urls') }}" method="post">
+ View tracked URLs   <input type="submit" id="view_urls" value=""/>
+	
+</form>
+
+<br>
+<form method="post"  action="{{ url_for('request_view_URL_data') }}">
+Select URL to view data: <input type="text" id="view_data" name="view_data">
+<input type="submit">
+<br>
+</form>
+
+{% endblock %}
+<html>

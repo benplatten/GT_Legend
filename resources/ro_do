@@ -1,0 +1,9 @@
+
+- plotly as part of 'view data'
+- embed in html (with offline plotly?)
+- which server
+- cron job
+- download as csv
+- URL must be present in both tables?
+- update logins to paid account
+- tidy up column names
